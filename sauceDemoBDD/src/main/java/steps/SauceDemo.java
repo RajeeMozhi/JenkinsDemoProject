@@ -123,6 +123,8 @@ public class SauceDemo {
 		String successMsg = driver.findElement(By.xpath("//h2[@class='complete-header']")).getText();
 		Thread.sleep(1000);
 		System.out.println("Success Message :"+successMsg);
+		Thread.sleep(3000);
+		driver.quit();
 	}
 
 }
